@@ -8,12 +8,12 @@ task :test => :spec
 task :default => :spec
 
 require 'rdoc/task'
-require File.expand_path('../lib/rash/version', __FILE__)
+require File.expand_path('../lib/unrash/version', __FILE__)
 RDoc::Task.new do |rdoc|
-  version = Rash::VERSION
+  version = Unrash::VERSION
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "rash #{version}"
+  rdoc.title = "unrash #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
